@@ -25,7 +25,7 @@ public class EmprestimoControlller {
         Emprestimo newLoan = new Emprestimo();
 
         try{
-            newLoan = service.createLoan(emprestimo);
+            newLoan = service.saveLoan(emprestimo);
         } catch (SQLException e) {
             e.printStackTrace();
         }
